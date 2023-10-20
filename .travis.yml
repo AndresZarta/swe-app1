@@ -3,5 +3,5 @@ os: linux
 dist: bionic
 python:
   - "3.11"
-before_install:
+install:
   - pip install -r mysite/requirements.txt
