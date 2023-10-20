@@ -16,3 +16,6 @@ script:
   - flake8 .
   - coverage run mysite/manage.py test
 
+  after_script:
+  - coveralls
+
