@@ -1,4 +1,6 @@
 language: python
+os: linux
+dist: bionic
 python:
   - "3.11"
 before_install:
