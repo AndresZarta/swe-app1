@@ -5,6 +5,4 @@ python:
   - "3.11"
 install:
   - pip install -r mysite/requirements.txt
-
-
-  script:
+script:
