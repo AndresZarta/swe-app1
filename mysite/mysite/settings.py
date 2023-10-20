@@ -25,7 +25,7 @@ SECRET_KEY = "@*pz4t$qrg(20w%hjb*9was32&%bxz!dstkv=1s^ca^c(_rrf2"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pollsite.eba-63hpk9hq.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ["pollsite.eba-63hpk9hq.us-east-1.elasticbeanstalk.com"]
 
 
 # Application definition
