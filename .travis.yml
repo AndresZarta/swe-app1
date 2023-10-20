@@ -38,7 +38,7 @@ deploy:
   env: "pollsite"
   bucket_name: "elasticbeanstalk-us-east-1-907398054630"
   bucket_path: "mysite"
-  zip_file: your-package-name.zip
+  zip_file: mysite.zip
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY_ID
