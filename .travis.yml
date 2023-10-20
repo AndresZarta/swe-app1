@@ -26,11 +26,6 @@ script:
 after_script:
   - coveralls
 
-before_deploy:
-  - cd mysite
-  - zip -r ../mysite.zip .
-  - cd ..
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
@@ -38,7 +33,6 @@ deploy:
   env: "mysite"
   bucket_name: "elasticbeanstalk-us-east-1-907398054630"
   bucket_path: "django-tutorial"
-  zip_file: mysite.zip
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY_ID
