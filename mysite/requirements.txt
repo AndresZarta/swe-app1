@@ -3,4 +3,6 @@ Django==2.2
 flake8==6.1.0
 pytz==2023.3.post1
 sqlparse==0.4.4
+coverage==6.5.0
+coveralls==3.3.1;
 
