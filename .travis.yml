@@ -26,14 +26,21 @@ script:
 after_script:
   - coveralls
 
+before_deploy:
+  - cd your-subdirectory-name
+  - zip -r ../your-package-name.zip .
+  - cd ..
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "mysite"
   env: "pollsite"
   bucket_name: "elasticbeanstalk-us-east-1-907398054630"
-  bucket_path: "mysite"  
+  bucket_path: "mysite"
+  zip_file: your-package-name.zip
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
+
