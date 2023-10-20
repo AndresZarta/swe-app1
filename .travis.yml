@@ -1,4 +1,6 @@
 language: python
-
 python:
   - "3.11"
+before_install:
+  - pip install 'urllib3<2.0'
+  - sudo apt-get update
