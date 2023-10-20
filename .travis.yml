@@ -27,8 +27,8 @@ after_script:
   - coveralls
 
 before_deploy:
-  - cd your-subdirectory-name
-  - zip -r ../your-package-name.zip .
+  - cd mysite
+  - zip -r ../mysite.zip .
   - cd ..
 
 deploy:
