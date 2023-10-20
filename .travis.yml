@@ -34,10 +34,10 @@ before_deploy:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "mysite"
-  env: "pollsite"
+  app: "django-tutorial"
+  env: "mysite"
   bucket_name: "elasticbeanstalk-us-east-1-907398054630"
-  bucket_path: "mysite"
+  bucket_path: "django-tutorial"
   zip_file: mysite.zip
   on:
     branch: main
