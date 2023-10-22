@@ -28,6 +28,7 @@ after_script:
 
 deploy:
   provider: elasticbeanstalk
+  local_dir: mysite
   region: "us-east-1"
   app: "django-tutorial"
   env: "mysite"
